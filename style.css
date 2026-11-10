@@ -20,8 +20,8 @@ body {
 }
 
 .panoramic-image {
-    width: 60%;
-    height: 120px;
+    width: 70%;
+    height: 190px;
     background: linear-gradient(45deg, #3b82f6, #10b981);
     display: flex;
     align-items: center;
@@ -30,9 +30,10 @@ body {
     border-radius: 8px;
     font-weight: bold;
 }
+.panoramic-image img{box-sizing: border-box; padding: 0px; width: 70%; height: 180px; border-radius: 10px;}
 
 .logo-section {
-    width: 40%;
+    width: 30%;
     text-align: center;
 }
 
@@ -58,7 +59,10 @@ body {
     font-weight: bold;
     
     /* Error intencional: Cambiar a flex para que se alinee horizontalmente */
-    display: block; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .client-data {
@@ -96,6 +100,7 @@ body {
     padding: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .form-section {
